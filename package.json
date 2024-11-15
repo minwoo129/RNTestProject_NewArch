@@ -5,9 +5,12 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "ios:devices": "xcrun simctl list devices",
+    "ios:18.0": "react-native run-ios --simulator='iPhone 16 Pro (18.0)'",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "reset-cache": "react-native start --reset-cache"
   },
   "dependencies": {
     "react": "18.3.1",
