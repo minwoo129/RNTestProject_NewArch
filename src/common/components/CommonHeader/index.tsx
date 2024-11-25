@@ -17,6 +17,7 @@ import {
   CommonHeaderProps,
   CommonHeaderTitleProps,
 } from './types';
+import {IC_BACK} from 'Icons';
 
 const checkAreaVisible = (args: checkAreaVisibleArgs): boolean => {
   const {left, center, right, dir} = args;
@@ -110,14 +111,7 @@ CommonHeader.RightComponents = ({
 };
 
 CommonHeader.BackBtn = ({onPress}: CommonHeaderBackBtnProps) => {
-  /* return (
-        <CommonHeader.IconImgBtn source={TEST} />
-    ); */
-  return (
-    <TouchableOpacity onPress={onPress}>
-      <Text>Back</Text>
-    </TouchableOpacity>
-  );
+  return <CommonHeader.IconImgBtn source={IC_BACK} onPress={onPress} />;
 };
 
 CommonHeader.IconImgBtn = ({

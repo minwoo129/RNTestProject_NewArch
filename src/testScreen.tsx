@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import {SafeAreaView, StyleSheet, View} from 'react-native';
-import CommonHeader from './CommonHeader';
+import CommonHeader from './common/components/CommonHeader';
 
 interface testScreenProps {}
 
